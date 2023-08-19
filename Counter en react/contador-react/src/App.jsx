@@ -7,7 +7,8 @@ export function App() {
             <div>
                 <Header/>
                 <Counter/>
-                <Button/>
+                <Button type="-"></Button>
+                <Button type="+"></Button>
             </div>
         </>
     )

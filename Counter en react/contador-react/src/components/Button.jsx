@@ -1,9 +1,8 @@
 import React from "react";
-export function Button() {
+export function Button(props) {
     return(
         <>
-            <button type="substract" >-</button>
-            <button type="add">+</button>
+            <button>{props.type}</button>            
         </>
     )
     
