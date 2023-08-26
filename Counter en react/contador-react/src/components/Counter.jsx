@@ -1,4 +1,5 @@
 import React from "react";
+import "./Counter.css"
 export function Counter() {
     return(
         <>
@@ -6,6 +7,5 @@ export function Counter() {
                 <h2>2</h2>
             </div>
         </>
-    )
-    
+    )    
 }

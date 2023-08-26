@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -14,61 +14,35 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
 
 h1 {
+  color: #3b42be;
   font-size: 3.2em;
-  line-height: 1.1;
-}
-
-h2{
-  color: #9fa1cd;
-  width: 5vw;
-  margin-top: 50px;
-  padding: 3px 20px;
-  border-radius: 8px;
-  font-size: 2em;
-  box-shadow: inset 1px 1px 12px rgba(130, 130, 130, 0.4);
-}
-
-#counterText{
-  display: flex;
-  justify-content: center;
 }
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 7em;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+  background-color: rgba(255, 255, 255, 0.87);
+  box-sizing: border-box;
+  box-shadow: 2px 4px 15px 1px rgba(63, 47, 96, 0.4);
+  border-radius: 20px;
 }
 
 .card {
@@ -77,45 +51,4 @@ h2{
 
 .read-the-docs {
   color: #888;
-}
-
-button {
-  color: #3b42be;
-  margin: 10vw;
-  width: 18vw;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 2px 4px;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  box-sizing: border-box;
-  box-shadow: 5px 5px 20px rgba(87, 50, 151, 0.5);
-  padding: 8px;
-
-  font-size: 2em;
-  font-weight: 700;  
-} 
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #3b42be;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #9297ff;
-  }
 }
