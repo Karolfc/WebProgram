@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header, Counter, Button } from "./components";
 
+const initCounterState = +window.localStorage.getItem("counter") ?? 0 
+
 export function App() {
+
+useEffect( () => {
+    //se ejecuta
+    console.log("counter changed")
+    localStorage.setItem('counter', JSON.stringify(counter));
+}, [counter])
+
     return(
         <>
             <div>
