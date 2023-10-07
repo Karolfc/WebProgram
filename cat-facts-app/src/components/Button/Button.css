@@ -1,0 +1,35 @@
+/*** ESTILOS BOTÓN GROW SKEW ***/
+button {
+    background: #ff9100; /* color de fondo */
+    color: #fffdfa; /* color de fuente */
+    border: 3.5px solid #ff9100; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 6px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-size: medium;
+    font-weight: 700;
+  }
+    button:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  button::after {
+    content: "";
+    background: #EF4E24;/* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  button:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }

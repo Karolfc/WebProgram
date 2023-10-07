@@ -1,0 +1,10 @@
+.catContainer{
+    max-width: 60vw;
+    
+}
+.catImg{
+    max-width: 20vw;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(53, 0, 105, 0.3);
+}
