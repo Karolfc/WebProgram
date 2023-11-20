@@ -23,7 +23,7 @@ export function HomePage () {
         <section id='contactPage'>
           <ContactSection />
         </section>
-        </section>
+      </section>
       <Footer />
     </>
   )

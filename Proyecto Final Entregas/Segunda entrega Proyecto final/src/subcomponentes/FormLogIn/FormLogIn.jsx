@@ -1,5 +1,6 @@
 import React from 'react'
 import './FormLogIn.css'
+import { Link } from 'react-router-dom'
 
 export function FormLogIn () {
   return (
@@ -19,7 +20,9 @@ export function FormLogIn () {
           </div>
         </div>
         <div className='ContainerBtn'>
-          <button>Sign in</button>
+          <Link to='/'>
+            <button>Sign in</button>
+          </Link>
         </div>
       </div>
     </>

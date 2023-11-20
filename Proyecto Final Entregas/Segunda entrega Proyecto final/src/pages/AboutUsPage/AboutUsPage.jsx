@@ -4,12 +4,12 @@ import { Nav, Footer, ValueSection, AboutStudio, TeamInfo } from '../../componen
 export function AboutUsPage () {
   return (
     <>
-    <section>
-      <Nav />
+      <section>
+        <Nav />
+      </section>
       <AboutStudio />
       <ValueSection />
       <TeamInfo />
-    </section>
       <Footer />
     </>
   )
